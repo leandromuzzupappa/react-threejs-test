@@ -1,0 +1,23 @@
+@import url('./fonts.css');
+@import url('./grid.css');
+
+:root {
+  --manrope: 'Manrope', sans-serif;
+  --clr-clear: 'rgb(223, 249, 251)';
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--manrope);
+  background-color: var(--clr-clear);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

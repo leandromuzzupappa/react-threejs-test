@@ -1,0 +1,7 @@
+.Experience {
+  block-size: 100vh;
+  inline-size: 100vw;
+  inset: 0;
+  position: fixed !important;
+  z-index: 10;
+}

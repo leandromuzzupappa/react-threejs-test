@@ -1,0 +1,22 @@
+.MoviesList {
+  .wrapper {
+    display: contents;
+    list-style-type: '';
+  }
+
+  .item {
+
+    &.itemBleed {
+      grid-column: bleed;
+      margin-inline: 1rem;
+
+    }
+
+    &:not(.itemBleed) {
+      grid-column: content;
+      margin-block: 200px;
+    }
+
+  }
+
+}

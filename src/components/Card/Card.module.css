@@ -1,0 +1,49 @@
+.Card {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+  z-index: 1;
+
+  .image {
+    border-radius: 8px;
+    block-size: 100%;
+    display: block;
+    inline-size: 100%;
+    object-fit: cover;
+    object-position: cover;
+  }
+
+  .cardContent {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 20px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  &::before,
+  &::after {
+    block-size: 100%;
+    content: '';
+    inline-size: 100%;
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &::before {
+    background: var(--bg-card);
+    filter: blur(9px);
+  }
+
+  &::after {
+    background: rgba(46, 54, 54, .9);
+  }
+
+}
