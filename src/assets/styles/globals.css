@@ -2,6 +2,7 @@
 @import url('./grid.css');
 
 :root {
+  --montreal: 'Montreal', sans-serif;
   --manrope: 'Manrope', sans-serif;
   --clr-clear: 'rgb(223, 249, 251)';
 }
@@ -13,7 +14,7 @@
 }
 
 body {
-  font-family: var(--manrope);
+  font-family: var(--montreal);
   background-color: var(--clr-clear);
 }
 
