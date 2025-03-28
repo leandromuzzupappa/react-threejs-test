@@ -1,4 +1,5 @@
 .Card {
+  background: rgba(46, 54, 54, .9);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -42,8 +43,8 @@
     filter: blur(9px);
   }
 
-  &::after {
+  /* &::after {
     background: rgba(46, 54, 54, .9);
-  }
+  } */
 
 }
