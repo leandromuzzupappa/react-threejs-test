@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { useGlobalRefs } from "../../hooks/useGlobalRefs";
 import css from "./Hero.module.css";
 import { GLElementsEnum } from "../Experience";
-import gsap from "gsap";
 
 export const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -14,7 +13,7 @@ export const Hero = () => {
   useEffect(() => {
     if (heroRef.current) setRef(heroRef);
     if (heroImageRef.current) setRef(heroImageRef);
-    // if (heroHeadingRef.current) setRef(heroHeadingRef);
+    if (heroHeadingRef.current) setRef(heroHeadingRef);
   }, [setRef]);
 
   return (
@@ -22,8 +21,13 @@ export const Hero = () => {
       ref={heroRef}
       className={`${css.Hero} grid`}
       data-gl={GLElementsEnum.BLOCK}
+      data-gl-transparent
     >
-      <h1 ref={heroHeadingRef} data-gl={GLElementsEnum.TEXT}>
+      <h1
+        ref={heroHeadingRef}
+        className={css.title}
+        data-gl={GLElementsEnum.TEXT}
+      >
         Ghibli Web GL
       </h1>
       <img

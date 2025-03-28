@@ -3,10 +3,10 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
-  background-color: rgba(255, 0, 0, 0.105);
 
 
-  h1 {
+  .title {
+    font-family: var(--montreal) !important;
     font-size: 48px;
     grid-column: content;
     padding-block: 60px;
